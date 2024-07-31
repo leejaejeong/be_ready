@@ -1,0 +1,14 @@
+:root {
+    /*! font-size */
+    --font-size-h1: 25rem; /* 400px */
+    --font-size-h2: 16.25rem; /* 260px */
+    --font-size-h3: 2.25rem; /* 36px */ 
+    --font-size-h4: 2rem; /* 32px */ 
+    --font-size-paragraph-lg: 2rem; /* 32px */ 
+    --font-size-paragraph-sm: 1.5rem; /* 24px */
+
+    /*! color */
+    --color-black-main: #212121;
+    --color-gray-sub: #eee;
+    --color-neon-point:#C4FB6D;
+  }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -140,7 +141,7 @@
 
     <!-- ! main page contents -->
     <div class="wrap main_wrap">
-        <section class="sec main_project_sec">
+        <section class="sec main_project_sec" id="main_project_sec">
             <div class="sec_tit_container">
                 <div class="line">
                     <div class="index">
@@ -285,7 +286,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sec_tit_container">
+            <div class="sec_tit_container" id="sec_tit_container">
                 <div class="line">
                     <div class="index">
                         <h5>[ WORK ]</h5>
@@ -352,7 +353,20 @@
         </section>
     </div>
 
-    
+    <!-- ! sticky nav -->
+    <nav class="sticky_nav">
+        <ul>
+            <li class="nav_main">
+                <a href="#main_project_sec">[ MAIN PROJECT ]</a>
+            </li>
+            <li class="nav_sub">
+                <a href="#sec_tit_container">[ SUB PROJECT ]</a>
+            </li>
+            <li class="nav_contact">
+                <a href="#">[ CONTACT ]</a>
+            </li>
+        </ul>
+    </nav>
 
     <script src="js/main.js"></script>
 </body>

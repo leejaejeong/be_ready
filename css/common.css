@@ -5,6 +5,7 @@
     --font-size-h3: 3.75rem; /* 60px */
     --font-size-h4: 2.25rem; /* 36px */ 
     --font-size-h5: 2rem; /* 32px */ 
+    --font-size-marquee: 12.5rem; /* 200px */ 
     --font-size-paragraph-lg: 2rem; /* 32px */ 
     --font-size-paragraph-sm: 1.5rem; /* 24px */
     --font-size-minimum: 0.875rem; /* 14px */
@@ -21,6 +22,10 @@ body{
   font-family: 'Pretendard-Regular';
   background-color: var(--color-black-main);
   color: var(--color-gray-sub);
+}
+
+body.stop-scroll {
+  overflow: hidden;
 }
 
 

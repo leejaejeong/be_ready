@@ -63,3 +63,128 @@ header .right_box ul li a{
   box-sizing: border-box;
   border-left: 1px solid var(--color-gray-sub);
 }
+
+
+/*! footer */
+footer .marquee_container{
+  border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .marquee{
+  overflow: hidden;
+}
+
+footer .marquee p{
+  padding: 30px 0;
+  font-size: var(--font-size-marquee);
+  white-space: nowrap;
+  animation: marquee01 20s linear infinite;
+  color: var(--color-neon-point);
+}
+
+footer .tit_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .tit_container h2{
+  flex: 0.8;
+  font-size: var(--font-size-h2);
+  font-family: 'Pretendard-Black';
+  text-align: center;
+  border-right: 1px solid var(--color-gray-sub);
+}
+
+footer .tit_container > div{
+  flex: 0.2;
+}
+
+footer .tit_container p,
+footer .tit_container .current_time{
+  font-size: var(--font-size-h5);
+  text-align: center;
+}
+
+footer .tit_container p{
+  border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .element_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .element_container div{
+  padding: 60px 0;
+  font-size: 4.5rem;
+  font-family: 'Pretendard-SemiBold';
+  text-align: center;
+}
+
+footer .element_container div:first-child{
+  flex: 0.8;
+  border-right: 1px solid var(--color-gray-sub);
+}
+
+footer .element_container div:first-child > span{
+  margin: 0 15px 0 0;
+}
+
+footer .element_container div:last-child{
+  flex: 0.2;
+}
+
+footer .element_container div:last-child > span{
+  margin: 0 5px 0 0;
+}
+
+footer .mail_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .mail_container > div{
+  flex: 0.1;
+  padding: 60px 0;
+  font-size: 4.5rem;
+  font-family: 'Pretendard-SemiBold';
+  text-align: center;
+}
+
+footer .mail_container > p{
+  flex: 0.8;
+  padding: 60px 0;
+  font-size: 4.375rem;
+  font-family: 'Pretendard-SemiBold';
+  text-align: center;
+  color: var(--color-neon-point);
+  border-left: 1px solid var(--color-gray-sub);
+  border-right: 1px solid var(--color-gray-sub);
+}
+
+footer .btn_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+footer .btn_container p{
+  padding: 60px 0;
+  font-size: var(--font-size-paragraph-sm);
+  flex: 0.5;
+  border-right: 1px solid var(--color-gray-sub);
+}
+
+footer .btn_container a{
+  font-size: var(--font-size-paragraph-lg);
+  text-align: right;
+  flex: 0.5;
+}

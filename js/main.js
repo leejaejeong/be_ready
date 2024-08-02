@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         let mainProjectOffset = $('.main_project_sec').offset().top;
-        let subProjectOffset = $('.sub_project_sec > .marquee_box').offset().top;
+        let subProjectOffset = $('.sub_project_sec > .marquee_container').offset().top;
         if ( $(window).scrollTop() >= mainProjectOffset ){
             $('.sticky_nav').addClass('show');
             $('.nav_main').addClass('active');

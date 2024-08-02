@@ -128,13 +128,13 @@
 
 
 
-.main_visual .scroll_box {
+.main_visual .scroll_container {
     margin: 0 0 72px 0;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-.main_visual .scroll_box .txt_box {
+.main_visual .scroll_container .txt_box {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -144,11 +144,11 @@
     color: var(--color-neon-point);
 }
 
-.main_visual .scroll_box .txt_box > div {
+.main_visual .scroll_container .txt_box > div {
     height: 10px;
 }
 
-.main_visual .scroll_box .txt_box > div > span {
+.main_visual .scroll_container .txt_box > div > span {
     display: block;
     animation: verticalRolling 1.5s linear infinite;
 }
@@ -166,7 +166,7 @@
 }
 
 
-.main_visual .marquee_box{
+.main_visual .marquee_container{
     position: relative;
 }
 
@@ -406,7 +406,7 @@
     background-color: var(--color-gray-sub);
 }
 
-.sub_project_sec .marquee_box{
+.sub_project_sec .marquee_container{
     border-top: 1px solid var(--color-black-main);
 }
 

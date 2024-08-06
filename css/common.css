@@ -1,5 +1,5 @@
 :root {
-    /*! font-size */
+    /*! pc font-size */
     --font-size-h1: 25rem; /* 400px */
     --font-size-h2: 16.25rem; /* 260px */
     --font-size-h3: 3.75rem; /* 60px */
@@ -64,6 +64,20 @@ header .right_box ul li a{
   border-left: 1px solid var(--color-gray-sub);
 }
 
+@media(max-width:768px){
+  header .left_box{
+    padding: 16px 20px;
+    font-size: var(--font-size-minimum);
+  }
+
+  header .right_box ul li a{
+    border: none;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    font-size: var(--font-size-minimum);
+  }
+}
+
 
 /*! footer */
 footer .marquee_container{
@@ -86,6 +100,7 @@ footer .tit_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   border-bottom: 1px solid var(--color-gray-sub);
 }
 
@@ -101,14 +116,24 @@ footer .tit_container > div{
   flex: 0.2;
 }
 
-footer .tit_container p,
-footer .tit_container .current_time{
-  font-size: var(--font-size-h5);
-  text-align: center;
+footer .tit_container > div > div{
+  position: relative;
+  height: 130px;
 }
 
-footer .tit_container p{
+footer .tit_container > div > div:first-child{
   border-bottom: 1px solid var(--color-gray-sub);
+}
+
+footer .tit_container p,
+footer .tit_container .current_time{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: var(--font-size-h5);
+  text-align: center;
 }
 
 footer .element_container {
@@ -187,4 +212,123 @@ footer .btn_container a{
   font-size: var(--font-size-paragraph-lg);
   text-align: right;
   flex: 0.5;
+}
+
+
+@media(max-width:1240px){
+  footer .marquee p{
+    font-size: 6.25rem;
+  }
+
+  footer .tit_container{
+    flex-direction: column-reverse;
+  }
+
+  footer .tit_container h2{
+    width: 100%;
+    padding: 30px 0;
+    font-size: 8.375rem;
+    border-right:none;
+    border-top: 1px solid var(--color-gray-sub);
+  }
+
+  footer .tit_container > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .tit_container > div > div{
+    flex: 1;
+    height: 100px;
+  }
+
+  footer .tit_container > div > div:first-child{
+    border-bottom: none;
+    border-right: 1px solid var(--color-gray-sub);
+  }
+
+  footer .element_container div{
+    padding: 30px 0;
+  }
+
+  footer .element_container div:first-child{
+    flex: 0.7;
+  }
+
+  footer .element_container div:last-child{
+    flex: 0.3;
+  }
+
+  footer .mail_container > div{
+    display: none;
+  }
+
+  footer .mail_container > p{
+    flex: 1;
+    padding: 30px 0;
+    font-size: 3.375rem;
+  }
+
+  footer .btn_container{
+    padding: 0 20px;
+  }
+
+  footer .btn_container p{
+    padding: 30px 0;
+  }
+}
+
+@media(max-width:768px){
+  footer .marquee p{
+    font-size: 3.125rem;
+  }
+
+  footer .tit_container p, 
+  footer .tit_container .current_time{
+    font-size: 1rem;
+  }
+
+  footer .tit_container > div > div{
+    height: 60px;
+  }
+
+  footer .tit_container h2{
+    font-size: var(--font-size-h3);
+  }
+
+  footer .element_container div{
+    padding: 14px 0;
+    font-size: var(--font-size-h4);
+  }
+
+  footer .element_container div:last-child > span{
+    margin: 0;
+    line-height: 0.8;
+  }
+
+  footer .mail_container > p{
+    padding: 20px 0;
+    font-size: var(--font-size-paragraph-sm);
+  }
+
+  footer .btn_container{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  footer .btn_container p{
+    padding: 30px 20px;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-gray-sub);
+    border-right: none;
+  }
+
+  footer .btn_container a{
+    font-size: 1.375rem;
+    padding: 30px 20px;
+  }
 }

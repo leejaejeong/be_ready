@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('body').addClass('stop-scroll');
     setTimeout(function () {
         $('body').removeClass('stop-scroll');
-    }, 5500);
+    }, 3300);
 
 
     setInterval(function () {
@@ -28,13 +28,14 @@ $(document).ready(function () {
 
 
     let header = gsap.timeline();
-    header.from('.header', { y: -150, duration: 1, delay: 4 });
+    header.from('.header', { y: -150, duration: 1, delay: 2.5 });
 
 
 
     $(window).scroll(function () {
         let mainProjectOffset = $('.main_project_sec').offset().top;
         let subProjectOffset = $('.sub_project_sec > .marquee_container').offset().top;
+        let contactOffset = $('footer').offset().top;
         if ( $(window).scrollTop() >= mainProjectOffset ){
             $('.sticky_nav').addClass('show');
             $('.nav_main').addClass('active');
@@ -46,14 +47,38 @@ $(document).ready(function () {
         if ( $(window).scrollTop() >= subProjectOffset ){
             $('.nav_main').removeClass('active');
             $('.nav_sub').addClass('active');
+            $('.sticky_nav li:not(.nav_sub)').addClass('reversal');
         }else{
             $('.nav_sub').removeClass('active');
+            $('.sticky_nav li:not(.nav_sub)').removeClass('reversal');
+        }
+
+        if ( $(window).scrollTop() >= contactOffset ){
+            $('.nav_main, .nav_sub').removeClass('active');
+            $('.sticky_nav li').removeClass('reversal');
+            $('.nav_contact').addClass('active');
+        }else{
+            $('.nav_contact').removeClass('active');
         }
     });
 
     $('.sticky_nav li a').click(function(){
-        $('.sticky_nav li').removeClass('active');
         $(this).addClass('active');
-    })
+    });
+
+
+    $('.sub_project_sec .sub_contents .slide_down').slideUp();
+    $('.sub_project_sec .sub_contents .content_tit').click(function(){
+        $('.sub_project_sec .sub_contents .slide_down').slideUp();
+        $('.sub_project_sec .sub_contents .content_tit .arrow_img_box').removeClass('flip_vertical');
+        if($(this).siblings().hasClass('active')){
+            $(this).siblings().removeClass('active');
+            $(this).children().children('.arrow_img_box').removeClass('flip_vertical');
+        } else {
+            $(this).siblings().slideDown(500);    
+            $(this).siblings().addClass('active');
+            $(this).children().children('.arrow_img_box').addClass('flip_vertical');
+        }
+    });
 
 });

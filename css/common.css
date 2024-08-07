@@ -33,6 +33,7 @@ body.stop-scroll {
 header{
   border-bottom: 1px solid var(--color-gray-sub);
   color: var(--color-neon-point);
+  z-index: 100;
 }
 
 header nav{
@@ -57,10 +58,13 @@ header .right_box ul{
   align-items: center;
 }
 
+header .right_box ul li{
+  border-left: 1px solid var(--color-gray-sub);
+}
+
 header .right_box ul li a{
   padding: 60px;
   box-sizing: border-box;
-  border-left: 1px solid var(--color-gray-sub);
 }
 
 @media(max-width:1240px){
@@ -69,8 +73,11 @@ header .right_box ul li a{
     font-size: var(--font-size-minimum);
   }
 
-  header .right_box ul li a{
+  header .right_box ul li{
     border: none;
+  }
+
+  header .right_box ul li a{
     padding: 30px 20px;
   }
 }
@@ -86,6 +93,28 @@ header .right_box ul li a{
     box-sizing: border-box;
     font-size: var(--font-size-minimum);
   }
+}
+
+
+/*! progress bar */
+.progress_bar_container{
+  width: 100%;
+  height: 5px;
+  color: var(--color-black-main);
+  background-color: var(--color-black-main);
+  z-index: 99;
+}
+
+.progress_bar_container.fix{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.progress_bar{
+  width: 0;
+  height: 5px;
+  background-color: var(--color-neon-point);
 }
 
 
@@ -346,19 +375,11 @@ footer .btn_container a{
     text-align: center;
   }
 }
-
-
-.bg{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-black-main);
-  z-index: 99;
+@media(max-width:768px){
+  .rectangle_box > div{ width: 100px;}
 }
 
-.bg.active{
-  display: block;
+
+@media(max-width:500px){
+  .rectangle_box > div{ width: 60px;}
 }

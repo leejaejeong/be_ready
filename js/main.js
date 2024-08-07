@@ -6,8 +6,10 @@ $(document).ready(function () {
 
 
     $('body').addClass('stop-scroll');
+    //$('.bg').addClass('active');
     setTimeout(function () {
         $('body').removeClass('stop-scroll');
+        $('.bg').removeClass('active');
     }, 3300);
 
 
@@ -26,10 +28,39 @@ $(document).ready(function () {
     }, 1000);
 
 
+    gsap.from('.header', { 
+        y: -150, 
+        duration: 1, 
+        delay: 2.5 
+    });
 
-    let header = gsap.timeline();
-    header.from('.header', { y: -150, duration: 1, delay: 2.5 });
+    /*
+    gsap.fromTo('.main_visual_txt', {
+            width:"100vw", 
+            height:"100vh",
+            duration: 1,
+            delay: 2.5,
+        }, {
+            width:"100vw", 
+            height:"50vh",
+            duration: 1,
+            delay: 2.5,
+    });
 
+    gsap.fromTo('.txt_container', {
+        xPercent: 0,
+        yPercent: 30,
+        scale: 0.6,
+        duration: 1,
+        delay: 2.5,
+    }, {
+        xPercent: 0,
+        yPercent: 0,
+        scale: 1,
+        duration: 1,
+        delay: 2.5,
+});
+    */
 
 
     $(window).scroll(function () {

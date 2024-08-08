@@ -950,19 +950,17 @@
     right: 1%;
 }
 
-.sticky_nav li{
+.sticky_nav li {
     margin: 18px;
-}
-
-.sticky_nav li a{
     font-size: 1.125rem;
     font-family: 'Pretendard-Medium';
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
-.sticky_nav li.active a{
+.sticky_nav li.active{
     color: var(--color-neon-point);
 }
 

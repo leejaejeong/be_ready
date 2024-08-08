@@ -32,6 +32,7 @@ body.stop-scroll {
 /*! header */
 header{
   width: 100%;
+  border-top: 1px solid var(--color-gray-sub);
   border-bottom: 1px solid var(--color-gray-sub);
   color: var(--color-neon-point);
   z-index: 100;
@@ -123,6 +124,12 @@ header .right_box ul li a{
   width: 0;
   height: 5px;
   background-color: var(--color-neon-point);
+}
+
+@media(max-width:768px){
+  .progress_bar_container{
+    display: none;
+  }
 }
 
 
@@ -316,6 +323,7 @@ footer .btn_container a{
     flex: 1;
     padding: 30px 0;
     font-size: 3.375rem;
+    border: none;
   }
 
   footer .btn_container{

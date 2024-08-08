@@ -135,15 +135,21 @@ $(document).ready(function () {
     // ! 서브 프로젝트 컨텐츠 슬라이드
     $('.sub_project_sec .sub_contents .slide_down').slideUp();
     $('.sub_project_sec .sub_contents .content_tit').click(function(){
+        $('.sub_project_sec .sub_contents .content_tit').removeClass('active');
         $('.sub_project_sec .sub_contents .slide_down').slideUp();
         $('.sub_project_sec .sub_contents .content_tit .arrow_img_box').removeClass('flip_vertical');
+        $('.sub_project_sec .sub_contents .content_tit .arrow_img_box').removeClass('flip_vertical02');
         if($(this).siblings().hasClass('active')){
             $(this).siblings().removeClass('active');
+            $(this).removeClass('active');
             $(this).children().children('.arrow_img_box').removeClass('flip_vertical');
+            $(this).children().children('.arrow_img_box').addClass('flip_vertical02');
         } else {
-            $(this).siblings().slideDown(500);    
+            $(this).siblings().slideDown(300);    
             $(this).siblings().addClass('active');
+            $(this).addClass('active');
             $(this).children().children('.arrow_img_box').addClass('flip_vertical');
+            $(this).children().children('.arrow_img_box').removeClass('flip_vertical02');
         }
     });
 

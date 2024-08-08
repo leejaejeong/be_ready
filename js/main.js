@@ -37,6 +37,27 @@ $(document).ready(function () {
         delay: 2.5 
     });
 
+    // ! 모바일 헤더 고정 
+    let windowWidth = $(window).width();
+
+    if(windowWidth <= 768){
+        $('.header').addClass('fix');
+    }else{
+        $('.header').removeClass('fix');
+    }
+
+    $( window ).resize(function() {
+
+        setInterval(function(){
+            if(window.innerWidth <= 768){
+                $('.header').addClass('fix');
+            }else{
+                $('.header').removeClass('fix');
+            }
+        })
+        
+     });
+
 
     // ! 상단 스크롤 진행 바
     $(window).scroll(function(){
@@ -78,15 +99,12 @@ $(document).ready(function () {
         if ( $(window).scrollTop() >= subProjectOffset ){
             $('.nav_main').removeClass('active');
             $('.nav_sub').addClass('active');
-            $('.sticky_nav li:not(.nav_sub)').addClass('reversal');
         }else{
             $('.nav_sub').removeClass('active');
-            $('.sticky_nav li:not(.nav_sub)').removeClass('reversal');
         }
 
         if ( $(window).scrollTop() >= contactOffset ){
             $('.nav_main, .nav_sub').removeClass('active');
-            $('.sticky_nav li').removeClass('reversal');
             $('.nav_contact').addClass('active');
         }else{
             $('.nav_contact').removeClass('active');

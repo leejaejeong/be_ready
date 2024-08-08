@@ -133,7 +133,7 @@
         height: 100vh;
     }
     100%{
-        height: 50vh;
+        height: 60vh;
     }
 }
 
@@ -268,8 +268,6 @@
 
     .main_visual .main_visual_txt{
         padding: 40px 40px 32px 40px;
-
-        animation-name: t-backgroundChange;
     }
 
     .main_visual .txt_container{
@@ -315,15 +313,6 @@
         margin-bottom: 20px;
     }
 
-    @keyframes t-backgroundChange {
-        0% {
-            height: 100vh;
-        }
-        100%{
-            height: 65vh;
-        }
-    }
-
     .main_visual .scroll_container{
         padding: 0 20px;
     }
@@ -336,8 +325,6 @@
 @media(max-width:768px){
     .main_visual .main_visual_txt{
         padding: 80px 20px 0 20px;
-
-        animation-name: m-backgroundChange;
     }
 
     .main_visual .txt_container .be_box .blank_box{
@@ -367,15 +354,6 @@
 
     .main_visual .txt_container .rectangle_box > div:not(.rectangle03){
         margin-bottom: 17px;
-    }
-
-    @keyframes m-backgroundChange {
-        0% {
-            height: 100vh;
-        }
-        100%{
-            height: 40vh;
-        }
     }
 
     .main_visual .scroll_container{
@@ -454,6 +432,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 20px;
 }
 
 .main_project_sec .sec_tit .txt_box02 > p {
@@ -726,6 +705,7 @@
 .sub_project_sec .sec_tit_container > .sec_tit h2{
     font-size: var(--font-size-h2);
     line-height: 0.8;
+    white-space: nowrap;
     font-family: 'Pretendard-Black';
     color: var(--color-black-main);
 }
@@ -734,6 +714,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 20px;
 }
 
 .sub_project_sec .sec_tit .txt_box02 > p{
@@ -962,10 +943,6 @@
 
 .sticky_nav li.active a{
     color: var(--color-neon-point);
-}
-
-.sticky_nav li.reversal a{
-    color: #A4A4A4;
 }
 
 @media(max-width:1240px){

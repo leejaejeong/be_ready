@@ -31,9 +31,17 @@ body.stop-scroll {
 
 /*! header */
 header{
+  width: 100%;
   border-bottom: 1px solid var(--color-gray-sub);
   color: var(--color-neon-point);
   z-index: 100;
+  background-color: var(--color-black-main);
+}
+
+header.fix{
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header nav{

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo EX30 | 소형 전기 SUV</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- ! header -->
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li>Models</li>
+                <li>Shop</li>
+                <li>My Volvo</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+        <div class="logo_box" onclick="location.href='index.html';">
+            <img src="imgs/volvo_logo_text.svg" alt="볼보 로고">
+        </div>
+        <nav class="sub_nav">
+            <a href="#">
+                <span>시승신청</span>
+            </a>
+            <div class="img_box">
+                <img src="imgs/volvo_ico_showroom.svg" alt="전시장 찾기">
+            </div>
+            <div class="img_box">
+                <img src="imgs/volvo_ico_login.svg" alt="로그인">
+            </div>
+        </nav>
+        <div class="side_menu_btn">
+            <img src="imgs/volvo_menu_btn.svg" alt="메뉴">
+        </div>
+    </header>
+
+    <!-- ! side menu -->
+    <div class="side_menu">
+        <div class="sub_nav_box">
+            <nav class="sub_nav">
+                <a href="#">시승신청</a>
+                <div class="img_box">
+                    <img src="imgs/volvo_ico_showroom.svg" alt="전시장 찾기">
+                </div>
+                <div class="img_box">
+                    <img src="imgs/volvo_ico_login.svg" alt="로그인">
+                </div>
+            </nav>
+            <div class="close_btn">
+                <div class="img_box">
+                    <img src="imgs/volvo_side_menu_close_btn.svg" alt="닫기">
+                </div>
+            </div>
+        </div>
+        <div class="side_menu_tab">
+            <ul>
+                <li>Models</li>
+                <li>Shop</li>
+                <li>My Volvo</li>
+                <li>About us</li>
+            </ul>
+        </div>
+        <div class="side_menu_contents">
+            <div class="models_contents">
+                <div class="tab_list">
+                    <ul>
+                        <li>Electric</li>
+                        <li>Plug-in hybrids</li>
+                        <li>Mild hybrids</li>
+                    </ul>
+                    <div class="compare_models">
+                        <a href="">모델 비교하기 ></a>
+                    </div>
+                </div>
+                <div class="tab_contents_box">
+                    <div class="tab_content">
+                        <div class="tit_box">
+                            <h3>Electric</h3>
+                            <span>순수전기</span>
+                        </div>
+                        <div class="item_box">
+                            <div class="item">
+                                <h5>Crossover</h5>
+                                <ul>
+                                    <li>
+                                        <h4>C40 Recharge</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_electric_c40.png" alt="C40 Recharge">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="">SUV ></a>
+                                <ul>
+                                    <li>
+                                        <h4>XC40 Recharge</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_electric_xc40.png" alt="XC40 Recharge">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>EX30</h4>
+                                        <div class="img_box" onclick="location.href='sub-ex30.html';">
+                                            <img src="imgs/volvo_side_menu_electric_ex30.png" alt="EX30">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_content">
+                        <div class="tit_box">
+                            <h3>Plug-in hybrids</h3>
+                            <span>플러그인 하이브리드</span>
+                        </div>
+                        <div class="item_box">
+                            <div class="item">
+                                <a href="">SUV ></a>
+                                <ul>
+                                    <li>
+                                        <h4>XC90 Recharge</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_plug_in_xc90.png" alt="XC90 Recharge">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>XC60 Recharge</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_plug_in_xc60.png" alt="XC60 Recharge">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="">Sedan ></a>
+                                <ul>
+                                    <li>
+                                        <h4>S90 Recharge</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_plug_in_s90.png" alt="S90 Recharge">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_content">
+                        <div class="tit_box">
+                            <h3>Mild hybrids</h3>
+                            <span>마일드 하이브리드</span>
+                        </div>
+                        <div class="item_box">
+                            <div class="item">
+                                <a href="">SUV ></a>
+                                <ul>
+                                    <li>
+                                        <h4>XC90</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_xc90.png" alt="XC90">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>XC60</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_xc60.png" alt="XC60">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>XC40</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_xc40.png" alt="XC40">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="">Sedan ></a>
+                                <ul>
+                                    <li>
+                                        <h4>S90</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_s90.png" alt="S90">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>S60</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_s60.png" alt="S60">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="">CROSS COUNTRY ></a>
+                                <ul>
+                                    <li>
+                                        <h4>V90 Cross Country</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_v90-cross-country.png"
+                                                alt="V90 Cross Country">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>V60 Cross Country</h4>
+                                        <div class="img_box">
+                                            <img src="imgs/volvo_side_menu_mild_v60-cross-country.png"
+                                                alt="V60 Cross Country">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop_contents">
+                <div class="own_a_volvo">
+                    <h5>OWN A VOLVO</h5>
+                    <ul>
+                        <li>
+                            <a href="#">시승신청</a>
+                        </li>
+                        <li>
+                            <a href="#">나만의 볼보 디자인하기</a>
+                        </li>
+                        <li>
+                            <a href="#">브로슈어 다운로드</a>
+                        </li>
+                        <li>
+                            <a href="#">볼보 SELEKT (인증 중고차)</a>
+                        </li>
+                        <li>
+                            <a href="#">Family Cars</a>
+                        </li>
+                        <li>
+                            <a href="#">City Cars</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="extras">
+                    <h5>EXTRAS</h5>
+                    <ul>
+                        <li>
+                            <a href="#">전시장 찾기</a>
+                        </li>
+                        <li>
+                            <a href="#">액세서리</a>
+                        </li>
+                        <li>
+                            <a href="#">Top-selling 액세서리 제안</a>
+                        </li>
+                        <li>
+                            <a href="#">볼보 라이프스타일 숍</a>
+                        </li>
+                        <li>
+                            <a href="#">라이프스타일 컬렉션 (영문)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="volvo_contents">
+                <div class="service">
+                    <h5>SERVICE</h5>
+                    <ul>
+                        <li>
+                            <a href="#">서비스 바이 볼보</a>
+                        </li>
+                        <li>
+                            <a href="#">서비스 센터 안내</a>
+                        </li>
+                        <li>
+                            <a href="#">리콜 정보 및 대상차량 조회</a>
+                        </li>
+                        <li>
+                            <a href="#">부품 가격 조회</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="support">
+                    <h5>SUPPORT</h5>
+                    <ul>
+                        <li>
+                            <a href="#">지원</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>Contact Us</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="volvo_account">
+                    <h5>VOLVO ACCOUNT</h5>
+                    <ul>
+                        <li>
+                            <a href="#">볼보 카스 앱</a>
+                        </li>
+                        <li>
+                            <a href="#">볼보 오리지널 타이어</a>
+                        </li>
+                        <li>
+                            <a href="#">타이어 에너지 효율 등급</a>
+                        </li>
+                        <li>
+                            <a href="#">주요부품 장착 및 탈거 방법</a>
+                        </li>
+                        <li>
+                            <a href="#">스마트폰 연결</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about_us_contents">
+                <div class="go_electric_with_volvo">
+                    <h5>GO ELECTRIC WITH VOLVO</h5>
+                    <ul>
+                        <li>
+                            <a href="#">전기화 허브</a>
+                        </li>
+                        <li>
+                            <a href="#">순수 전기차</a>
+                        </li>
+                        <li>
+                            <a href="#">플러그 인 하이브리드</a>
+                        </li>
+                        <li>
+                            <a href="#">자동차 충전</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about_volvo_cars">
+                    <h5>ABOUT VOLVO CARS</h5>
+                    <ul>
+                        <li>
+                            <a href="#">우리의 이야기</a>
+                        </li>
+                        <li>
+                            <a href="#">세이프티</a>
+                        </li>
+                        <li>
+                            <a href="#">지속가능성</a>
+                        </li>
+                        <li>
+                            <a href="#">뉴스&이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#">전문 테크니션 양성 프로그램</a>
+                        </li>
+                        <li>
+                            <a href="#">기술 교육 및 정비 자료</a>
+                        </li>
+                        <li>
+                            <a href="#">뉴스레터 신청</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect_with_us">
+                    <h5>CONNECT WITH US</h5>
+                    <ul>
+                        <li>
+                            <a href="#">채용</a>
+                        </li>
+                        <li>
+                            <a href="#">투자자 정보(영문)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! EX30 visual -->
+    <div class="ex30_visual">
+        <div class="p_ex30_visual">
+            <video src="video/volvo_ex30_p_visual_video.mp4" autoplay muted playsinline></video>
+        </div>
+        <div class="m_ex30_visual">
+            <video src="video/volvo_ex30_m_visual_video.mp4" autoplay muted playsinline></video>
+        </div>
+        <div class="txt_box">
+            <h1>순수 전기 EX30.<br>
+                컴팩트한 크기의 SUV.
+            </h1>
+            <h5>세제 혜택 후 판매가격 (*보조금 미포함)<br>
+                KRW 49,450,000
+            </h5>
+        </div>
+    </div>
+
+    <!-- ! EX30 contents -->
+    <div class="ex30_contents">
+        <section class="sec performance_sec">
+            <div class="performance_txt_wrap">
+                <h3>작은 패키지에 담긴 뛰어난 전기 성능.</h3>
+                <ul>
+                    <li>
+                        <p><strong>66</strong>kWh</p>
+                        <p>배터리 용량</p>
+                    </li>
+                    <li>
+                        <p><strong>26</strong>M</p>
+                        <p>예상 DC 고속 충전 시간<br>
+                            (10~80%)
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>17</strong>kWh</p>
+                        <p>에너지 소비<br>
+                            (100km당)
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>53</strong>s</p>
+                        <p>가속도<br>
+                            (0~100km/h)</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec function_sec">
+            <div class="function_sec_wrap">
+                <h3>편리함은 <br>편안함을 의미합니다.</h3>
+                <div class="p_function_content">
+                    <div class="img_box">
+                        <img src="imgs/volvo_ex30_function.png" alt="ex30 내부 이미지">
+                    </div>
+                    <div class="bullet wheel_bullet"></div>
+                    <div class="line wheel_line01"></div>
+                    <div class="line wheel_line02"></div>
+                    <div class="txt_box wheel_txt_box">
+                        <h5>사각 스포츠 스티어링 휠</h5>
+                        <p>
+                            스티어링 휠의 사각형 디자인은 스포티한 그립감을 제공합니다.
+                            또한 운전자 제어를 위한 스타일리시한 스위치가 장착되어 있습니다.
+                        </p>
+                    </div>
+                    <div class="bullet seat_bullet"></div>
+                    <div class="line seat_line01"></div>
+                    <div class="line seat_line02"></div>
+                    <div class="txt_box seat_txt_box">
+                        <h5>슬림한 인체공학적인 시트</h5>
+                        <p>
+                            척추 지지력을 극대화할 수 있도록 시트를 설계합니다.
+                            이렇게 하면 압력, 굽힘 및 어깨 긴장을 줄일 수 있습니다.
+                            전동식 설정을 사용하여 이상적인 시트 위치를 찾으십시오.
+                        </p>
+                    </div>
+                    <div class="bullet storage_bullet"></div>
+                    <div class="line storage_line01"></div>
+                    <div class="line storage_line02"></div>
+                    <div class="txt_box storage_txt_box">
+                        <h5>다용도 화물 공간 및 보관 공간</h5>
+                        <p>
+                            EX30의 넓은 318L 트렁크로 운반하는 모든 것을 보다 쉽게 싣고 내릴 수 있습니다.
+                            바닥이 평평하고 립이 없으며, 높낮이 조절로 더욱 편리하게 사용할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="m_function_content">
+                    <div class="img_box">
+                        <img src="imgs/volvo_ex30_function.png" alt="ex30 내부 이미지">
+                    </div>
+                    <div class="bullet wheel_bullet"></div>
+                    <div class="bullet seat_bullet"></div>
+                    <div class="bullet storage_bullet"></div>
+                </div>
+            </div>
+
+            <script>
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.set(".function_sec_wrap .txt_box, .function_sec_wrap .bullet, .function_sec_wrap .line", {
+                    opacity: 0,
+                    y:50,
+                })
+                gsap.to(".function_sec_wrap .txt_box, .function_sec_wrap .bullet, .function_sec_wrap .line", {
+                    scrollTrigger: {
+                        trigger: ".function_sec_wrap .txt_box, .function_sec_wrap .bullet, .function_sec_wrap .line",
+                        start: "0% 80%",
+                    },
+                    y:0,
+                    opacity: 1,
+                    duration: 1,
+                })
+            </script>
+        </section>
+
+        <section class="sec ex30_color_sec">
+            <div class="ex30_color_sec_wrap">
+                <div class="color_change_box">
+                    <div class="sec_tit">
+                        <h5>외장색상</h5>
+                        <h3>COLOR</h3>
+                    </div>
+                    <div class="color_select">
+                        <div class="txt_box">
+                            <h5>클라우드 블루(Cloud Blue)</h5>
+                            <h5>크리스탈 화이트 (Crystal White)</h5>
+                            <h5>오닉스 블랙 (Onyx Black)</h5>
+                            <h5>베이퍼 그레이 (Vapour Grey)</h5>
+                        </div>
+                        <div class="color_select_btn">
+                            <button class="blue_btn"></button>
+                            <button class="white_btn"></button>
+                            <button class="black_btn"></button>
+                            <button class="grey_btn"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="color_visual_box">
+                    <div class="color_visual">
+                        <div class="video_box">
+                            <video src="video/volvo_ex30_color_blue_video.mp4" autoplay muted loop playsinline></video>
+                        </div>
+                        <div class="img_box">
+                            <img src="imgs/volvo_ex30_color_blue_img.jpg" alt="클라우드 블루">
+                        </div>
+                    </div>
+                    <div class="color_visual">
+                        <div class="video_box">
+                            <video src="video/volvo_ex30_color_white_video.mp4" autoplay muted loop playsinline></video>
+                        </div>
+                        <div class="img_box">
+                            <img src="imgs/volvo_ex30_color_white_img.jpg" alt="크리스탈 화이트">
+                        </div>
+                    </div>
+                    <div class="color_visual">
+                        <div class="video_box">
+                            <video src="video/volvo_ex30_color_black_video.mp4" autoplay muted loop playsinline></video>
+                        </div>
+                        <div class="img_box">
+                            <img src="imgs/volvo_ex30_color_black_img.jpg" alt="오닉스 블랙">
+                        </div>
+                    </div>
+                    <div class="color_visual">
+                        <div class="video_box">
+                            <video src="video/volvo_ex30_color_grey_video.mp4" autoplay muted loop playsinline></video>
+                        </div>
+                        <div class="img_box">
+                            <img src="imgs/volvo_ex30_color_grey_img.jpg" alt="베이퍼 그레이">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec interior_sec">
+            <div class="interior_sec_wrap">
+                <div class="sec_tit">
+                    <h5>인테리어</h5>
+                    <div class="box">
+                        <h3>
+                            친환경 소재로<br>
+                            더 새롭고 더 세련되어진
+                        </h3>
+                        <p>
+                            EX30을 위해 자연에서 영감을 받은 인테리어를 만들었습니다.
+                            조화로운 색상의 실내 장식과 재생 및 재활용된 소재로 만들어진 장식이 아름답게 조화를 이루고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="video_box">
+                    <video src="video/volvo_ex30_interior_video.mp4" autoplay muted loop playsinline></video>
+                    <div class="control_btn">
+                        <img src="imgs/volvo_ex30_interior_video_pause_btn.png" alt="일시정지" class="pause_btn">
+                        <img src="imgs/volvo_ex30_interior_video_play_btn.png" alt="재생" class="play_btn">
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <a href="#">인테리어 자세히 보기</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec gallery_sec">
+            <div class="gallery_sec_wrap">
+                <div class="sec_tit">
+                    <h3>Gallery</h3>
+                    <a href="#">갤러리 더보기</a>
+                </div>
+                <div class="gallery_imgs">
+                    <div class="img_boxes img_boxes01">
+                        <div class="box_container box_container01">
+                            <div class="box box01">
+                                <div class="img_box">
+                                    <img src="imgs/volvo_ex30_gallery_img.png" alt="ex30 이미지">
+                                </div>
+                            </div>
+                            <div class="box box02">
+                                <div class="img_box">
+                                    <img src="imgs/volvo_ex30_gallery_img02.png" alt="ex30 이미지">
+                                </div>
+                                <div class="img_box">
+                                    <img src="imgs/volvo_ex30_gallery_img03.png" alt="ex30 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_container box_container02">
+                            <div class="img_box">
+                                <img src="imgs/volvo_ex30_gallery_img04.png" alt="ex30 이미지">
+                            </div>
+                            <div class="img_box">
+                                <img src="imgs/volvo_ex30_gallery_img05.png" alt="ex30 이미지">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_boxes img_boxes02">
+                        <div class="box_container">
+                            <div class="img_box">
+                                <img src="imgs/volvo_ex30_gallery_img06.png" alt="ex30 이미지">
+                            </div>
+                            <div class="img_box">
+                                <img src="imgs/volvo_ex30_gallery_img07.png" alt="ex30 이미지">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ! EX30 function pop up -->
+    <div class="function_popup_wrap">
+        <div class="function_popup wheel_function_popup">
+                <div class="txt_box">
+                    <h5>사각 스포츠 스티어링 휠</h5>
+                    <p>
+                        스티어링 휠의 사각형 디자인은 스포티한 그립감을 제공합니다.
+                        또한 운전자 제어를 위한 스타일리시한 스위치가 장착되어 있습니다.
+                    </p>
+                </div>
+                <div class="img_box">
+                    <img src="imgs/volvo_ex30_function_popup_wheel.png" alt="사각 스포츠 스티어링 휠">
+                </div>
+        </div>
+        <div class="function_popup seat_function_popup">
+                <div class="txt_box">
+                    <h5>슬림한 인체공학적인 시트</h5>
+                    <p>
+                        척추 지지력을 극대화할 수 있도록 시트를 설계합니다.
+                        이렇게 하면 압력, 굽힘 및 어깨 긴장을 줄일 수 있습니다.
+                        전동식 설정을 사용하여 이상적인 시트 위치를 찾으십시오.
+                    </p>
+                </div>
+                <div class="img_box">
+                    <img src="imgs/volvo_ex30_function_popup_seat.png" alt="슬림한 인체공학적인 시트">
+                </div>
+        </div>
+        <div class="function_popup storage_function_popup">
+                <div class="txt_box">
+                    <h5>다용도 화물 공간 및 보관 공간</h5>
+                    <p>
+                        EX30의 넓은 318L 트렁크로 운반하는 모든 것을 보다 쉽게 싣고 내릴 수 있습니다.
+                        바닥이 평평하고 립이 없으며, 높낮이 조절로 더욱 편리하게 사용할 수 있습니다.
+                    </p>
+                </div>
+                <div class="img_box">
+                    <img src="imgs/volvo_ex30_function_popup_storage.png" alt="다용도 화물 공간 및 보관 공간">
+                </div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+
+    <!-- ! footer -->
+    <footer>
+        <div class="footer_wrap">
+            <ul class="quick_link">
+                <li>
+                    <a href="#">시승신청</a>
+                    <div class="img_box">
+                        <img src="imgs/volvo_quick_link_arrow.svg" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#">전시장 찾기</a>
+                    <div class="img_box">
+                        <img src="imgs/volvo_quick_link_arrow.svg" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뉴스레터</a>
+                    <div class="img_box">
+                        <img src="imgs/volvo_quick_link_arrow.svg" alt="이동">
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뉴스 & 이벤트</a>
+                    <div class="img_box">
+                        <img src="imgs/volvo_quick_link_arrow.svg" alt="이동">
+                    </div>
+                </li>
+            </ul>
+            <div class="footer_link">
+                <div class="link_box">
+                    <div>
+                        <h5>HELP & SUPPORT</h5>
+                        <ul>
+                            <li>
+                                <a href="#">서비스 센터 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">서비스 바이 볼보</a>
+                            </li>
+                            <li>
+                                <a href="#">지원</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>CONTACT US</h5>
+                        <ul>
+                            <li>
+                                <a href="#">CONTACT US</a>
+                            </li>
+                            <li>
+                                <a href="#">전시장 찾기</a>
+                            </li>
+                            <li>
+                                <a href="#">시승 신청</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_logo">
+                    <img src="imgs/volvo_logo_symbol.svg" alt="볼보 로고">
+                </div>
+                <div class="volvo_app">
+                    <div class="left_box">
+                        <h5>VOLVO CARS APP</h5>
+                        <a href="https://www.volvocars.com/kr/volvo-cars-app/" target="_blank">자세히 알아보기↗</a>
+                        <div class="p_download">
+                            <span>Volvo Cars app을
+                                다운로드 하려면 스캔하세요.
+                            </span>
+                            <div class="img_box">
+                                <img src="imgs/volvo_app_qr.png" alt="볼보 어플 다운로드">
+                            </div>
+                        </div>
+                        <div class="m_download">
+                            <a href="https://www.volvocars.com/kr/volvo-cars-app/" target="_blank">앱스토어 ↗</a>
+                            <a href="https://www.volvocars.com/kr/volvo-cars-app/" target="_blank">구글 플레이 ↗</a>
+                        </div>
+                    </div>
+                    <div class="right_box">
+                        <div class="img_box">
+                            <img src="imgs/volvo_app_img.png" alt="볼보 어플 이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_info">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">쿠키</a>
+                        </li>
+                        <li>
+                            <a href="#">법적고지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">위치정보사업 및 위치기반 이용약관</a>
+                        </li>
+                    </ul>
+                    <span>Copyright © 2024 Volvo Car Corporation<br> (또는 계열사 또는 라이센스 제공자)</span>
+                </div>
+                <div class="footer_sns_ico">
+                    <div class="img_box">
+                        <img src="imgs/volvo_sns_ico_facebook.svg" alt="페이스북">
+                    </div>
+                    <div class="img_box">
+                        <img src="imgs/volvo_sns_ico_instagram.svg" alt="인스타그램">
+                    </div>
+                    <div class="img_box">
+                        <img src="imgs/volvo_sns_ico_youtube.svg" alt="유튜브">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

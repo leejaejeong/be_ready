@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Malgun Gothic semilight';
+    src: url('../fonts/malgunsl.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Malgun Gothic regular';
+    src: url('../fonts/malgun.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Malgun Gothic bold';
+    src: url('../fonts/malgunbd.woff') format('woff');
+    font-weight: 700;
+}

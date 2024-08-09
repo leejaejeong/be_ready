@@ -1,0 +1,645 @@
+/* !===== main visual ===== */
+.pc_video video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.mobile_video{
+    display: none;
+}
+
+@media(max-width:768px){
+    .pc_video{
+        display: none;
+    }
+    
+    .mobile_video{
+        display: block;
+    }
+
+    .mobile_video video{
+        max-width: 768px;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+/* !===== collection ===== */
+.collection_sec{
+    margin: 200px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.collection_sec .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.collection_sec .wrap > div{
+    position: relative;
+    cursor: pointer;
+}
+
+.collection_sec .wrap > div > .img_box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.collection_sec .wrap > div a{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 26px;
+    font-family: 'Pretendard-Regular';
+    color: #fff;
+}
+
+.collection_sec .wrap > div a::after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid #fff;  
+    transform: scaleX(0); 
+    transition: transform 300ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+
+.collection_sec .wrap > div:hover a::after{
+    transform: scaleX(1); 
+}
+
+@media(max-width:1024px){
+    .collection_sec .wrap > div a{
+        bottom: 20px;
+        left:20px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width:768px){
+    .collection_sec .wrap{
+        flex-direction: column;
+    }
+
+    .collection_sec .wrap > div a{
+        font-size: 22px;
+    }
+}
+
+
+/* !===== what's new ===== */
+.whats_new_sec{
+    display: flex;
+    justify-content: space-between;
+    gap:110px;
+    margin: 200px 0;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+.whats_new_sec .txt_btn_wrap{
+    position: relative;
+    flex:1;
+}
+
+.whats_new_sec .txt_btn_wrap .tit_box h2{
+    margin: 0 0 20px 0;
+    font-size: 64px;
+    font-family: "MrEavesXLMod-B";
+}
+
+.whats_new_sec .txt_btn_wrap .tit_box p{
+    font-size: 32px;
+    line-height: 1.3;
+    font-family: 'Pretendard-Medium';
+}
+
+.whats_new_sec .txt_btn_wrap .btn_box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    z-index: 99;
+}
+
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-pagination{
+    position: static;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+}
+
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-next::after,
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-prev::after{
+    display: none;
+}
+
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-next,
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-prev{
+    max-width: 14px;
+}
+
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-next > img,
+.whats_new_sec .txt_btn_wrap .btn_box .swiper-button-prev > img{
+    width: 100%;
+}
+
+.whats_new_sec .whats_new_swiper{
+    flex: 3;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+@media(max-width:1024px){
+    .whats_new_sec{
+        gap: 30px;
+    }
+
+    .whats_new_sec .txt_btn_wrap .tit_box h2{
+        font-size: 48px;
+    }
+    
+    .whats_new_sec .txt_btn_wrap .tit_box p{
+        font-size: 24px;
+    }
+
+    .whats_new_sec .txt_btn_wrap .tit_box p > br{
+        display: none;
+    }
+
+    .whats_new_sec .txt_btn_wrap .btn_box .swiper-pagination{
+        font-size: 18px;
+    }
+
+    .whats_new_sec .txt_btn_wrap .btn_box .swiper-button-next,
+    .whats_new_sec .txt_btn_wrap .btn_box .swiper-button-prev{
+        max-width: 10px;
+    }
+
+    .whats_new_sec .whats_new_swiper{
+        flex: 2;
+    }
+}
+
+@media(max-width:768px){
+    .whats_new_sec{
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .whats_new_sec .txt_btn_wrap .tit_box h2{
+        margin: 0 0 10px 0;
+        font-size: 38px;
+    }
+    
+    .whats_new_sec .txt_btn_wrap .tit_box p{
+        font-size: 22px;
+    }
+
+    .whats_new_sec .txt_btn_wrap .tit_box{
+        padding: 0 0 0 20px;
+    }
+
+    .whats_new_sec .txt_btn_wrap .btn_box{
+        display: none;
+    }
+}
+
+
+
+
+
+/* !===== gift ===== */
+.gift_sec{
+    margin: 200px 0;
+}
+
+.gift_sec .tit_box{
+    display: flex;
+    align-items: center;
+    gap:50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.gift_sec .tit_box h2{
+    margin: 0 0 20px 0;
+    font-size: 64px;
+    font-family: "MrEavesXLMod-B";
+}
+
+.gift_sec .tit_box p{
+    padding: 0 0 15px 0;
+    font-size: 32px;
+    line-height: 1.3;
+    font-family: 'Pretendard-Medium';
+}
+
+.gift_sec .marquee_box{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.gift_sec .marquee{
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+}
+
+.gift_sec .marquee .txt_img_box{
+    position: relative;
+    width: 33%;
+    min-width: 300px;
+    cursor: pointer;
+    animation: marquee 40s linear infinite;
+}
+
+.gift_sec .marquee_box:hover .txt_img_box{
+    animation-play-state: paused;
+}
+
+.gift_sec .marquee .txt_img_box img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.gift_sec .marquee .txt_img_box:hover img{
+    filter: none;
+}
+
+.gift_sec .marquee .txt_img_box span{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "MrEavesXLMod-B";
+    color: #fff;
+    z-index: 10;
+}
+
+.gift_sec .marquee .txt_img_box span::after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid #fff;  
+    transform: scaleX(0); 
+    transition: transform 300ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+
+.gift_sec .marquee .txt_img_box:hover span::after{
+    transform: scaleX(1); 
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+@media(max-width:1024px){
+    .gift_sec .tit_box h2{
+        font-size: 48px;
+    }
+    
+    .gift_sec .tit_box p{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:768px){
+    .gift_sec .tit_box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0;
+        margin: 0 0 20px 0;
+        box-sizing: border-box;
+    }
+
+    .gift_sec .tit_box h2{
+        margin: 0 0 10px 0;
+        font-size: 38px;
+    }
+    
+    .gift_sec .tit_box p{
+        font-size: 22px;
+    }
+
+    .gift_sec .marquee .txt_img_box{
+        width: 33%;
+        min-width: 250px;
+    }
+
+    .gift_sec .marquee .txt_img_box span{
+        top: 10px;
+        left: 10px;
+        font-size: 22px;
+    }
+}
+
+
+
+/* !===== gift pop up ===== */
+.popup_sec{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.popup_sec .container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 1440px;
+    width: 100%;
+    padding: 50px 45px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.popup_sec .container .close_btn{
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}
+
+.popup_sec .container .close_btn img{
+    max-width: 25px;
+    width: 100%;
+}
+
+.popup_sec .container .img_txt_box{
+    display: flex;
+    align-items: center;
+    gap:46px;
+    padding: 30px 55px;
+    box-sizing: border-box;
+}
+
+.popup_sec .container .img_txt_box .img_box{
+    max-width: 460px;
+    width: 100%;
+}
+
+.popup_sec .container .img_txt_box .img_box img{
+    width: 100%;
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box h3{
+    margin: 0 0 35px 0;
+    font-size: 46px;
+    font-family: "MrEavesXLMod-B";
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box p{
+    margin: 0 0 20px 0;
+    padding: 35px 0 0 0;
+    box-sizing: border-box;
+    border-top: 1px solid #222;
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: 'Pretendard-Light';
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box .btn_box{
+    position: relative;
+    width: 100%;
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box .btn_box button{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 6px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+    color: #222;
+    cursor: pointer;
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box .btn_box button::after{
+    display:block;
+    content: '';
+    border-bottom: 1px solid #222;  
+    transform: scaleX(0); 
+    transition: transform 300ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+
+.popup_sec .container .img_txt_box .txt_btn_box .btn_box button:hover::after{
+    transform: scaleX(1); 
+}
+
+
+@media(max-width:1024px){
+    .popup_sec .container{
+        max-width: 950px;
+        padding: 30px 15px;
+    }
+
+    .popup_sec .container .img_txt_box{
+        gap:40px;
+        padding: 30px 40px;
+    }
+
+    .popup_sec .container .img_txt_box .img_box{
+        min-width: 220px;
+    }
+
+    .popup_sec .container .img_txt_box .txt_btn_box h3{
+        margin: 0 0 25px 0;
+        font-size: 32px;
+    }
+    
+    .popup_sec .container .img_txt_box .txt_btn_box p{
+        padding: 25px 0 0 0;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px){
+    .popup_sec .container{
+        max-width: 80%;
+        padding: 0 0 30px 0;
+    }
+
+    .popup_sec .container .close_btn{
+       position: absolute;
+       top: 15px;
+       right: 15px;
+    }
+
+    .popup_sec .container .close_btn img{
+        filter: brightness(10);
+    }
+
+    .popup_sec .container .img_txt_box{
+        flex-direction: column;
+        gap:30px;
+        padding: 0 0 30px 0;
+    }
+
+    .popup_sec .container .img_txt_box .img_box{
+        max-width: 100%;
+    }
+
+    .popup_sec .container .img_txt_box .img_box img{
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .popup_sec .container .img_txt_box .txt_btn_box{
+        padding: 0 20px;
+    }
+
+    .popup_sec .container .img_txt_box .txt_btn_box h3{
+        margin: 0 0 15px 0;
+        font-size: 26px;
+    }
+    
+    .popup_sec .container .img_txt_box .txt_btn_box p{
+        padding: 15px 0 0 0;
+        font-size: 16px;
+    }
+}
+
+
+
+/* !===== product ===== */
+section.product{
+    margin: 200px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+section.product ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px 30px;
+}
+
+section.product ul > li > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+section.product ul > .mobile_sunglasses_tit_box{
+    display: none;
+}
+
+section.product .tit_box .txt_box{
+    margin: 0 0 50px 0;
+}
+
+section.product .tit_box .txt_box h2{
+    font-size: 64px;
+    font-family: "MrEavesXLMod-B";
+}
+
+section.product .tit_box .txt_box a{
+    font-size: 24px;
+    line-height: 1.3;
+    font-family: 'Pretendard-Regular';
+}
+
+section.product .tit_box .txt_box a::after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid #222;  
+    transform: scaleX(0); 
+    transition: transform 300ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+
+section.product .tit_box .txt_box a:hover::after{
+    transform: scaleX(1); 
+}
+
+section.product ul > .tit_box > .pattern img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width:1024px){
+    section.product ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap:10px 20px;
+    }
+
+    section.product ul > .mobile_sunglasses_tit_box{
+        display: block;
+    }
+
+    section.product ul > .pc_sunglasses_tit_box{
+        display: none;
+    }
+
+    section.product .tit_box .txt_box h2{
+        font-size: 48px;
+    }
+    
+    section.product .tit_box .txt_box a{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:768px){
+    section.product ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    }
+
+    section.product ul > .mobile_sunglasses_tit_box{
+        display: block;
+    }
+
+    section.product ul > .pc_sunglasses_tit_box{
+        display: none;
+    }
+
+    section.product .tit_box .txt_box h2{
+        font-size: 38px;
+    }
+    
+    section.product .tit_box .txt_box a{
+        font-size: 18px;
+    }
+
+    section.product ul > .tit_box > .pattern{
+        flex:1;
+    }
+
+    section.product ul > .tit_box > .pattern img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

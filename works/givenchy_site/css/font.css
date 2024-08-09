@@ -1,0 +1,28 @@
+/* !===== font ===== */
+@font-face {
+    font-family: "MrEavesXLMod-B";
+    font-weight: bold;
+    src: url("../font/MrEavesXLModOT-Bold.woff") format("woff");
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../font/Pretendard-Light.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../font/Pretendard-Medium.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../font/Pretendard-Regular.woff') format('woff');
+    font-weight: regular;
+    font-style: normal;
+}

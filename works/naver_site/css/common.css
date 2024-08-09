@@ -1,0 +1,32 @@
+body {
+    font-family: 'Malgun Gothic regular';
+}
+
+.sticky_btn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.sticky_btn button{
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(24, 24, 24, 0.2);
+    cursor: pointer;
+}
+
+.sticky_btn button:hover{
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+.sticky_btn img{
+    width: 14px;
+    vertical-align: middle;
+}

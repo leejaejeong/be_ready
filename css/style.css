@@ -1043,7 +1043,9 @@
     }
 
     .sub_project_sec .sub_contents > div span{
+        padding: 20px 10px 20px 0;
         font-size: var(--font-size-minimum);
+        text-align: left;
     }
 
     .sub_project_sec .sub_contents .content_tit h4{

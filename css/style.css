@@ -29,7 +29,7 @@
     }
 
     .m_intro_visual .rectangle{
-        min-height: 26px;
+        min-height: 22px;
         background-color: var(--color-black-main);
 
         animation-name: colorChange;
@@ -38,7 +38,7 @@
     }
 
     .m_intro_visual .rectangle:not(:last-child){
-        margin: 0 0 30px 0;
+        margin: 0 0 20px 0;
     }
 
     .m_intro_visual .rectangle01{

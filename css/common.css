@@ -260,10 +260,15 @@ footer .btn_container p{
   border-right: 1px solid var(--color-gray-sub);
 }
 
-footer .btn_container a{
+footer .btn_container button{
   font-size: var(--font-size-paragraph-lg);
   text-align: right;
   flex: 0.5;
+  cursor: pointer;
+}
+
+footer .btn_container button:hover{
+  text-decoration: underline;
 }
 
 
@@ -381,7 +386,7 @@ footer .btn_container a{
     border-right: none;
   }
 
-  footer .btn_container a{
+  footer .btn_container button{
     width: 100%;
     font-size: 1.375rem;
     padding: 30px 20px;

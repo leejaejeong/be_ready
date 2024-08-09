@@ -22,7 +22,7 @@
 
 <body>
     <!-- ! header -->
-    <header class="header">
+    <header class="header" id="header">
         <nav>
             <div class="box left_box">
                 <p>[ Daejeon, Korea ]</p>
@@ -37,8 +37,18 @@
         </nav>
     </header>
 
+    <!-- ! progress bar -->
     <div class="progress_bar_container">
         <div class="progress_bar"></div>
+    </div>
+
+    <!-- ! m intro visual -->
+    <div class="m_intro_visual">
+        <div class="rectangle_box">
+            <div class="rectangle rectangle01"></div>
+            <div class="rectangle rectangle02"></div>
+            <div class="rectangle rectangle03"></div>
+        </div>
     </div>
 
     <!-- ! main visual -->
@@ -193,7 +203,7 @@
                             <div class="img_box">
                                 <img src="imgs/be_ready_main_project_arrow.svg" alt="화살표">
                             </div>
-                            <button onclick="goPage1()">View Project</button>
+                            <button onclick="goPage01()">View Project</button>
                         </div>
                     </div>
                     <div class="imgs_container">
@@ -279,7 +289,7 @@
                             <div class="img_box">
                                 <img src="imgs/be_ready_main_project_arrow.svg" alt="화살표">
                             </div>
-                            <button>View Project</button>
+                            <button onclick="goPage02()">View Project</button>
                         </div>
                     </div>
                     
@@ -328,11 +338,18 @@
                             <div class="img_box arrow_img_box">
                                 <img src="imgs/be_ready_sub_project_arrow.svg" alt="펼치기">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Sed ornare dictum fermentum.
-                            </p>
+                            <div class="description_box">
+                                <div class="description_txt">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. 
+                                        Sed ornare dictum fermentum.
+                                    </p>
+                                    <div>
+                                        <a href="naver_site/index.html" target="_blank">View Project →</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="slide_down">
@@ -341,7 +358,7 @@
                             consectetur adipiscing elit. 
                             Sed ornare dictum fermentum.
                         </p>
-                        <a href="">View Project</a>
+                        <a href="naver_site/index.html" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="naverwhale_content">
@@ -355,11 +372,18 @@
                             <div class="img_box arrow_img_box">
                                 <img src="imgs/be_ready_sub_project_arrow.svg" alt="펼치기">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Sed ornare dictum fermentum.
-                            </p>
+                            <div class="description_box">
+                                <div class="description_txt">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. 
+                                        Sed ornare dictum fermentum.
+                                    </p>
+                                    <div>
+                                        <a href="" target="_blank">View Project →</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="slide_down">
@@ -382,11 +406,18 @@
                             <div class="img_box arrow_img_box">
                                 <img src="imgs/be_ready_sub_project_arrow.svg" alt="펼치기">
                             </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Sed ornare dictum fermentum.
-                            </p>
+                            <div class="description_box">
+                                <div class="description_txt">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit. 
+                                        Sed ornare dictum fermentum.
+                                    </p>
+                                    <div>
+                                        <a href="" target="_blank">View Project →</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="slide_down">
@@ -457,14 +488,25 @@
         </div>
         <div class="btn_container">
             <p>©2024</p>
-            <a href="#">Go Back to Top↑</a>
+            <button>Go Back to Top↑</button>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
     <script>
-        function goPage1() {
-            location.href = "이동 할 페이지"
+        function goPage01() {
+            const urlGivenchy = "givenchy_site/index.html";
+            window.open(urlGivenchy);
+        }
+
+        function goPage02() {
+            const urlVolvo = "volvo_site/index.html";
+            window.open(urlVolvo);
+        }
+
+        function goPage03() {
+            const urlNaver = "naver_site/index.html";
+            window.open(urlNaver);
         }
 
     </script>

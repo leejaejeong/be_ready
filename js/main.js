@@ -10,8 +10,7 @@ $(document).ready(function () {
     $('body').addClass('stop-scroll');
     setTimeout(function () {
         $('body').removeClass('stop-scroll');
-        $('.bg').removeClass('active');
-    }, 3300);
+    }, 3500);
 
 
     // ! 현재 시간 나타내기
@@ -157,7 +156,7 @@ $(document).ready(function () {
     });
 
 
-    // ! 서브 프로젝트 컨텐츠 슬라이드
+    // ! 서브 프로젝트 컨텐츠 슬라이드 다운
     if(window.innerWidth <= 1240){
         $('.sub_project_sec .sub_contents .slide_down').addClass('slide_down_show');
     }else{
@@ -173,7 +172,6 @@ $(document).ready(function () {
                 $('.sub_project_sec .sub_contents .slide_down').removeClass('slide_down_show');
             }
         })
-        
      });
 
     $('.sub_project_sec .sub_contents .slide_down').slideUp();
@@ -196,8 +194,11 @@ $(document).ready(function () {
         }
     });
 
-    
-    
+
+    // ! footer scroll top 이동 버튼  
+    $('footer .btn_container button').click(function(){
+        $('html, body').animate({scrollTop : 0}, 400);
+    });
     
 
 

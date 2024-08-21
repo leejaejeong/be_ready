@@ -1,0 +1,609 @@
+
+/*header 커스텀 시작*/
+/*========== left ==========*/
+
+header .logo_box{
+    flex:0.15;
+    margin-right: 55px;
+}
+header .logo_box img{
+    width:100%;
+    min-width: 162px;
+    cursor: pointer;
+}
+
+
+/*========== middile ==========*/
+header .gnb{
+    flex:0.7;
+}
+
+header .gnb > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .gnb > ul > li > a{
+    position:relative;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+header .gnb > ul > li:first-child > a{
+    font-weight: bold;
+}
+
+
+header .gnb > ul > li > a > span{
+    font-size: 0.5rem;
+    padding:5px;
+    border-radius: 4px;
+    color: #666;
+}
+
+header .gnb > ul > li > a > span:last-child{
+    opacity: 0;
+    position:absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+header .gnb ul > li:hover > a > span:last-child{
+    opacity: 1;
+    background-color: #E5E5E5;
+}
+
+header .gnb ul > li:hover > a > span:first-child{
+    opacity: 0;
+}
+
+header .gnb > ul > li{
+    position: relative;
+    padding:0 23px;
+}
+
+header .gnb > ul > li:first-child{
+    padding-left: 0;
+}
+
+header .gnb > ul ul{
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top:200%;
+    left: 0;
+    transition: 0.3s;
+    background-color: #fff;
+    padding:15px 0;
+    box-sizing: border-box;
+}
+
+header .gnb > ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 10px 2px #E5E5E5;
+    margin: 0 auto;
+}
+
+header .gnb > ul > li > ul > li{
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+header .gnb > ul > li > ul > li > a{
+    padding:15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .gnb > ul > li > ul > li:hover > a{
+    background-color: #E5E5E5;
+}
+
+@media(max-width:1240px){
+    header .gnb{
+        display: none;
+    }
+}
+
+
+
+/*========== right ==========*/
+header .whale_service_box{
+    flex: 0.15;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .whale_service_box > .download_btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    flex: 0.95;
+}
+
+header .whale_service_box > .download_btn > a{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border:1px solid #E5E5E5;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+header .whale_service_box > .download_btn > a > div {
+    width: 25%;
+    margin-right: 5px;
+}
+
+header .whale_service_box > .download_btn > a > div > img{
+    width: 100%;
+}
+
+header .whale_service_box > .download_btn:hover > a{
+    background-color: #E5E5E5;
+}
+
+header .whale_service_box > .service_btn{
+    flex: 0.05;
+}
+
+header .whale_service_box > .service_btn > div {
+    width: 100%; 
+    cursor: pointer;
+}
+
+header .whale_service_box > .service_btn > div > img{
+    width: 100%;
+    min-width: 18px;
+}
+
+
+@media(max-width:1440px){
+    header .whale_service_box > .download_btn > a{
+        padding: 10px 15px;
+    }
+}
+@media(max-width:1240px){
+    header .whale_service_box > .download_btn > a > div{
+        display: none;
+    }
+}
+
+/*header 커스텀 끝*/
+
+
+
+/*content 커스텀 시작*/
+/*========== sec01~06 ==========*/
+.sec .wrap_left{
+    flex:0.5;
+}
+
+.sec .wrap_right{
+    flex: 0.5;
+}
+
+.sec:nth-child(-n+6):nth-child(even) .wrap{
+    flex-direction: row-reverse;
+}
+
+.sec:nth-child(n+2):nth-child(-n+6) .wrap_left > .btn_box a{
+    padding:15px;
+    border: 1px solid #CECECE;
+    border-radius: 10px;
+}
+
+.sec:nth-child(n+2):nth-child(-n+6) .wrap_left > .btn_box a:hover{
+    background-color: #E5E5E5;
+}
+
+.sec .wrap_right > div{
+    width: 100%;
+    max-width: 650px;
+}
+
+.sec .wrap_right > div > img{
+    width: 100%;
+}
+
+.sec:nth-child(n+2):nth-child(-n+6) .wrap_right > div > img{
+    width: 85%;
+}
+
+.sec:nth-child(odd) .wrap_right > div {
+    text-align: right;
+}
+
+@media(max-width:768px){
+    .sec:nth-child(-n+6):nth-child(even) .wrap{
+        flex-direction: column;
+    }
+    .sec .wrap_right > div, .sec:nth-child(odd) .wrap_right > div{
+        text-align: center;
+    }
+}
+
+
+/*sec01 btn 커스텀*/
+.whale_browser .wrap_left > .btn_box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05C3A7;
+    padding:15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    width:20%;
+    min-width: 150px;
+}
+
+.whale_browser .wrap_left > .btn_box a:hover{
+    background-color: #05AF96;
+}
+
+.whale_browser .wrap_left > .btn_box div{
+    width: 20%;
+}
+
+.whale_browser .wrap_left > .btn_box img{
+    min-width: 10px;
+    width: 100%;
+}
+
+/*========== sec05 (퀵서치 관련 콘텐츠) ==========*/
+@media(max-width:1440px){
+    .quick_search .txt_box br{
+        display: none;
+    }
+}
+
+
+/*========== sec07 (보안 관련 콘텐츠) ==========*/
+.security{
+    background-color: #F2EFFC;
+}
+
+.security .wrap{
+    flex-direction: column;
+}
+
+.security .wrap_top{
+    text-align: center;
+}
+
+.security .wrap_top > h2 br{
+    display: none;
+}
+
+.security .wrap_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.security .wrap_bottom .txt_con{
+    flex: 0.3;
+}
+
+.security .wrap_bottom .txt_con ul li{
+    border-top:1px solid #E5E5E5;
+    transition: 0.3s;
+    border-radius: 20px;
+    padding:20px;
+}
+
+.security .wrap_bottom .txt_con .txt-box{
+    display: flex;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.security .wrap_bottom .txt_con .img_con{
+    width: 100%;
+    display: none;
+}
+.security .wrap_bottom .txt_con .img_con img{
+    width: 100%;
+}
+
+.security .wrap_bottom .txt_con .txt-box h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.security .wrap_bottom .txt_con .txt-box .txt{
+    margin-right: 10px;
+}
+
+.security .wrap_bottom .txt_con ul li:first-child{
+    background-color: #7350EB;
+    color: #fff;
+}
+
+.security .wrap_bottom .txt_con ul li:first-child p{
+    color: #D7D2FC;
+    margin-bottom: 0;
+}
+
+.security .wrap_bottom .txt_con .element > div{
+    background-color: #AA95F3;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.security .wrap_bottom .txt_con .element > div:first-child{
+    background-color: #fff;
+}
+
+.security .wrap_bottom .img_con{
+    flex: 0.7;
+}
+
+.security .wrap_bottom .img_con img{
+    width: 100%;
+}
+
+
+@media(max-width:768px){
+    .security .wrap_top > h2 br{
+        display: block;
+    }
+    .security .wrap_bottom{
+        flex-direction: column;
+    }
+    .security .wrap_bottom .txt_con .img_con{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .security .wrap_bottom .img_con{
+        display: none;
+    }
+}
+
+
+/*========== sec08 (위젯 관련) ==========*/
+.widget{
+    height: 1600px;
+}
+
+.widget .wrap{
+    flex-direction: column;
+    position: sticky;
+    top:77px;
+    padding:60px 0 0 0;
+}
+
+.widget .wrap_top{
+    text-align: center;
+}
+
+.widget .wrap_bottom{
+    width: 80%;
+}
+
+.widget .wrap_bottom div{
+    width: 100%;
+}
+
+.widget .wrap_bottom div > img{
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .widget{
+        height: 100vh;
+    }
+    .widget .wrap{
+        padding:60px 0;
+    }
+}
+
+
+/*========== sec09 (확장앱 관련) ==========*/
+.extension_app{
+    background-color: #F7F9FB;
+}
+
+.extension_app .wrap{
+    flex-direction: column;
+    gap:60px;
+    padding:120px 0;
+}
+
+.extension_app .wrap .app_img ul {
+    display: flex;
+    gap:40px;
+}
+
+.extension_app .wrap .app_img ul > li > div{
+    width: 80%;
+    background-color: #fff;
+    padding:10px;
+    border-radius: 40px;
+    box-shadow: 0.5px 0.5px 10px 2px #E5E5E5;
+}
+
+.extension_app .wrap .app_img ul > li:nth-child(even){
+    margin-top: 30px;
+}
+
+.extension_app .wrap .app_img ul div > img{
+    width: 100%;
+}
+
+.extension_app > .wrap > .txt_box {
+    text-align: center;
+}
+
+.extension_app > .wrap > .app_list{
+    width: 85%;
+}
+
+.extension_app > .wrap > .app_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:28px;
+}
+
+.extension_app > .wrap > .app_list ul li{
+    width: 50%;
+    width: calc(50% - 42px);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 10px 2px #E5E5E5;
+}
+
+.extension_app > .wrap > .app_list ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.extension_app > .wrap > .app_list ul li a > div {
+    width: 20%;
+}
+
+.extension_app > .wrap > .app_list ul li a > div > img{
+    width: 100%;
+    max-width: 90px;
+}
+
+.extension_app > .wrap > .app_list ul li a > div + div{
+    width: 80%;
+}
+
+.extension_app > .wrap > .app_list ul li a > div + div > h4{
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.extension_app > .wrap > .app_list ul li a > div + div > p{
+    margin: 0;
+}
+
+@media(max-width:768px){
+    .extension_app .wrap{
+        gap: 30px;
+        padding:100px 20px;
+        box-sizing: border-box;
+    }
+    .extension_app .wrap .app_img{
+        width: 75%;
+    }
+    .extension_app .wrap .app_img ul{
+        gap:20px;
+    }
+    .extension_app .wrap .app_img ul > li > div{
+        border-radius: 16px;
+        padding:7px;
+    }
+    .extension_app .txt_box {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .extension_app .txt_box p{
+        margin-bottom: 0;
+    }
+    .extension_app > .wrap > .app_list{
+        width: 100%;
+    }
+    .extension_app > .wrap > .app_list ul{
+        flex-direction: column;
+        gap: 23px;
+    }
+    .extension_app > .wrap > .app_list ul li{
+        width: 100%;
+    }
+    .extension_app > .wrap > .app_list ul li a > div + div > h4{
+        font-size: 1.125rem;
+    }
+}
+
+
+/*========== sec10 (모바일 브라우저 관련) ==========*/
+.mobile_browser{
+    background-color: #3D8AEB;
+}
+
+.mobile_browser .wrap{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+    background-image: url('https://i.ibb.co/G5xmR4g/banner-beta-download-phone-1440.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.mobile_browser .wrap h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+.mobile_browser .wrap p{
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.mobile_browser .wrap .download_btn a{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding: 10px 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.8rem;
+}
+
+.mobile_browser .wrap .download_btn a:hover{
+    background-color: #E5E5E5;
+}
+
+.mobile_browser .wrap .download_btn a > div{
+    width: 20%;
+}
+
+.mobile_browser .wrap .download_btn a > div > img{
+    width: 100%;
+    min-width: 10px;
+}
+
+@media(max-width:768px){
+    .mobile_browser .wrap{
+        padding: 48px 20px 200px 20px;
+        box-sizing: border-box;
+        background-image: url('https://i.ibb.co/K5qJC6V/banner-beta-download-phone-360.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 50%;
+    }
+
+    .mobile_browser .wrap h4{
+        font-size: 1.5rem;
+    }
+}

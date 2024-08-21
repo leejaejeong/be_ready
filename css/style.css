@@ -629,7 +629,8 @@
 
 @media(max-width:1240px){
     .main_project_sec .givenchy_content,
-    .main_project_sec .volvo_content{
+    .main_project_sec .volvo_content,
+    .main_project_sec .jomalone_content{
         gap: 30px;
         padding: 0 20px;
     }
@@ -686,7 +687,8 @@
         font-size: 1rem;
     }
 
-    .main_project_sec .givenchy_content{
+    .main_project_sec .givenchy_content,
+    .main_project_sec .jomalone_content{
         flex-direction: column;
     }
 

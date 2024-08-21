@@ -1,0 +1,205 @@
+/*header 공통 커스텀 시작*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+header > .header_con{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:21px 84px;
+    box-sizing: border-box;
+}
+
+@media(max-width:1440px){
+    header > .header_con{
+        padding:21px 30px;
+    }
+}
+
+@media(max-width:768px){
+    header > .header_con{
+        flex: 1;
+        padding:21px 20px;
+    }
+}
+/*header 공통 커스텀 끝*/
+
+
+
+/*content 공통 커스텀 시작*/
+.content {
+    padding-top: 76px;
+}
+.sec .wrap{
+    max-width: 1440px;
+    width: 100%;
+    padding:80px 84px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.sec h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #2288EC;
+    margin-bottom: 15px;
+}
+
+.sec h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.sec p{
+    font-size: 1.1rem;
+    color: #777777;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media(max-width:768px){
+    .sec .wrap{
+        flex-direction: column;
+        padding:60px 20px;
+        gap:40px;
+    }
+    .sec h3{
+        font-size: 1rem;
+    }
+    .sec h2{
+        font-size: 2rem;
+    }
+    .sec p{
+        font-size: 0.8rem;
+    }
+}
+
+/*content 공통 커스텀 끝*/
+
+
+/*footer 공통 커스텀 시작*/
+footer{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding:20px 0;
+}
+
+footer .wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .wrap ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.85rem;
+    color:#777777;
+}
+
+footer .wrap ul li:nth-child(2){
+    font-weight: bold;
+    color: #000;
+}
+
+footer .wrap ul li:nth-child(6){
+    color:#000;
+}
+
+footer .wrap .left_footer{
+    flex: 0.75;
+}
+
+footer .wrap .left_footer ul {
+    flex-wrap: wrap;
+}
+
+footer .wrap .right_footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0.25;
+    gap:20px;
+    white-space: nowrap;
+}
+
+footer .wrap .right_footer ul{
+    flex: 0.4;
+}
+
+footer .wrap .right_footer ul li a {
+    width: 25%;
+}
+
+footer .wrap .right_footer ul li a img{
+    width: 100%;
+    min-width: 25px;
+}
+
+footer .wrap .right_footer .beta{
+    flex: 0.4;
+}
+
+footer .wrap .right_footer .beta a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border:1px solid #efefef;
+    border-radius: 5px;
+}
+
+footer .wrap .right_footer .beta a div{
+    width:20%;
+}
+
+footer .wrap .right_footer .beta a div > img{
+    width: 100%;
+    max-width: 30px;
+}
+
+
+@media(max-width:768px){
+    footer .wrap{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    footer .wrap .left_footer{
+        flex: 1;
+    }
+
+    footer .wrap ul{
+        gap: 10px;
+    }
+
+    footer .wrap .right_footer{
+        flex: 1;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    
+}
+
+/*footer 공통 커스텀 끝*/

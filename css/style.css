@@ -617,6 +617,16 @@
     height: 100%;
 }
 
+.main_project_sec .jomalone_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    margin: 200px 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
 @media(max-width:1240px){
     .main_project_sec .givenchy_content,
     .main_project_sec .volvo_content{

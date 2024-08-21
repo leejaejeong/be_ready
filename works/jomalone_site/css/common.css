@@ -1,0 +1,208 @@
+:root{
+    /*! color */
+    --color-black:#222222;
+}
+
+h1, h2, h3, h4, h5, p, span{
+    color: var(--color-black);
+}
+
+.intro_sec .purchase_container a,
+.item_tab_sec .item_list ul li .btn_box a,
+.other_collections .btn_box a{
+    letter-spacing: 0.5rem;
+    font-family: 'Pretendard-Regular';
+    color: #fff;
+    border: 3px solid var(--color-black);
+    background-color: var(--color-black);
+    transition: 0.3s;
+}
+
+.intro_sec .purchase_container a:hover,
+.other_collections .btn_box a:hover{
+    color: var(--color-black);
+    background-color: transparent;
+}
+
+body{
+    background-image: url('../imgs/jomalone_back_texture.png');
+    background-blend-mode : multiply;
+    background-color: #FCF9EE;
+}
+
+
+/*! footer */
+.m_footer{
+    display: none;
+}
+
+footer{
+    padding: 100px 195px;
+    border-top: 10px solid var(--color-black);
+}
+
+footer .corp_info{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 0 100px 0;
+}
+
+footer .corp_info > ul{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .corp_info > ul li {
+    flex: 1;
+}
+
+footer .corp_info > ul > li h5{
+    margin: 0 0 30px 0;
+    font-size: 0.875rem;
+    font-family: 'Pretendard-SemiBold';
+}
+
+footer .corp_info > ul ul li{
+    margin: 0 0 20px 0;
+}
+
+footer .corp_info > ul ul li a{
+    font-size: 0.875rem;
+    font-family: 'Pretendard-Regular';
+}
+
+footer .corp_info > ul ul li a:hover{
+    text-decoration: underline;
+}
+
+footer .corp_info > .img_box{
+    flex: 1;
+    text-align: right;
+}
+
+footer .corp_info img{
+    max-width: 220px;
+    width: 100%;
+    cursor: pointer;
+}
+
+footer .privacy_policy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 0;
+    border-top: 1px solid var(--color-black);
+}
+
+footer .privacy_policy ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .privacy_policy ul a{
+    font-size: 0.875rem;
+    font-family: 'Pretendard-Light';
+}
+
+footer .privacy_policy ul a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:1240px){
+    footer{
+        padding: 100px 30px;
+    }
+
+    footer .corp_info .img_box img{
+        max-width: 150px;
+    }
+}
+
+@media(max-width:768px){
+    .p_footer{
+        display: none;
+    }
+
+    .m_footer{
+        display: block;
+    }
+
+    footer .corp_info{
+        flex-direction: column;
+    }
+
+    footer .corp_info > ul{
+        flex-direction: column;
+    }
+
+    footer .corp_info > ul li{
+        cursor: pointer;
+    }
+
+    footer .corp_info > ul li > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .corp_info > ul > li h5 {
+        margin: 0 0 20px 0;
+    }
+
+    footer .corp_info .f_menu_list .f_arrow{
+        position: relative;
+        width: 5%;
+        height: 20px;
+    }
+
+    footer .corp_info .f_menu_list .f_arrow > div{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 8px;
+        height: 1px;
+        background-color: var(--color-black);
+    }
+
+    footer .corp_info .f_menu_list .f_arrow > div:first-child{
+        transform: translateX(-67%) rotate(45deg);
+    }
+
+    footer .corp_info .f_menu_list .f_arrow > div:last-child{
+        transform: translateX(6%) rotate(-45deg);
+    }
+
+    footer .corp_info > .img_box{
+        text-align: center;
+    }
+
+    footer .privacy_policy{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/*! scroll top btn */
+.top_btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.top_btn img{
+    max-width: 50px;
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .top_btn{
+        bottom: 30px;
+        right: 20px;
+    }
+}

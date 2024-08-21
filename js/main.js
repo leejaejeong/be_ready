@@ -158,6 +158,7 @@ $(document).ready(function () {
 
     // ! 서브 프로젝트 컨텐츠 슬라이드 다운
     if(window.innerWidth <= 1240){
+        $('.sub_project_sec .sub_contents .slide_down').slideUp();
         $('.sub_project_sec .sub_contents .slide_down').addClass('slide_down_show');
     }else{
         $('.sub_project_sec .sub_contents .slide_down').removeClass('slide_down_show');
@@ -174,7 +175,6 @@ $(document).ready(function () {
         })
      });
 
-    $('.sub_project_sec .sub_contents .slide_down').slideUp();
     $('.sub_project_sec .sub_contents .content_tit').click(function(){
         $('.sub_project_sec .sub_contents .content_tit').removeClass('active');
         $('.sub_project_sec .sub_contents .slide_down').slideUp();

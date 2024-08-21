@@ -198,6 +198,12 @@ header img {
     width: 100%;
 }
 
+.contents_sec .content02 .card_container{
+    background-image: url(../imgs/jomalone_back_texture.png);
+    background-blend-mode: multiply;
+    background-color: #F9F4E1;
+}
+
 .contents_sec .img_box {
     position: sticky;
     top: 0;
@@ -238,7 +244,6 @@ header img {
     flex-direction: row-reverse;
 }
 
-
 .contents_sec .content02 .img_box img {
     border-radius: 0 50px 0 0;
 }
@@ -248,8 +253,20 @@ header img {
         flex-direction: column-reverse;
     }
 
+    .contents_sec .content01 .card_container{
+        background-image: url('../imgs/jomalone_back_texture.png');
+        background-blend-mode: multiply;
+        background-color: #F9F4E1;
+    }
+
+    .contents_sec .content02 .card_container{
+        background-image: none;
+        background-blend-mode:normal ;
+        background-color: transparent;
+    }
+
     .contents_sec .img_box img {
-        border-radius: 0 50px 0 0;
+        border-radius: 0 0 50px 0;
     }
 
     .contents_sec .fix_container {
@@ -264,7 +281,7 @@ header img {
     }
 
     .contents_sec .content02 .img_box img {
-        border-radius: 0 50px 0 0 ;
+        border-radius: 0 0 50px 0 ;
     }
 }
 
@@ -274,11 +291,11 @@ header img {
     }
 
     .contents_sec .img_box{
-        top: 33%;
+        top: 28%;
     }
 
     .contents_sec .img_box img{
-        height: 68vh;
+        height: 70vh;
     }
 }
 
@@ -539,7 +556,7 @@ header img {
     color: var(--color-black);
     background-color: transparent;
     border: none;
-    box-shadow: 0 1px 0 0 var(--color-black) inset;
+    box-shadow: 0 0.5px 0 0 var(--color-black) inset;
 }
 
 .item_tab_sec .item_list ul li .btn_box:hover a {

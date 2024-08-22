@@ -511,7 +511,7 @@
 
 .main_project_sec .sec_tit .txt_box02 > p {
     font-size: var(--font-size-paragraph-sm);
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .main_project_sec .main_contents{
@@ -551,7 +551,7 @@
 
 .main_project_sec p{
     margin: 15px 0 0 0;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .main_project_sec .fix_container .btn_box{
@@ -805,7 +805,7 @@
 
 .sub_project_sec .sec_tit .txt_box02 > p{
     font-size: var(--font-size-paragraph-sm);
-    line-height: 1.2;
+    line-height: 1.5;
     color: var(--color-black-main);
 }
 

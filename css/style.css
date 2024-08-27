@@ -1,67 +1,87 @@
-/*! m intro visual */
-.m_intro_visual{
-    display: none;
+/*! intro visual */
+.intro_visual{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black-main);
+    z-index: 111;
+
+    animation-name: hideIntro;
+    animation-duration: 0.5s;
+    animation-delay: 2.4s;
+    animation-fill-mode:forwards;
+}
+
+.intro_visual .rectangle_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 12%;
+    max-height: 290px;
+}
+
+.intro_visual .rectangle{
+    height:52px;
+    background-color: var(--color-black-main);
+
+    animation-name: colorChange;
+    animation-duration: 1.2s;
+    animation-fill-mode:forwards;
+}
+
+.intro_visual .rectangle:not(:last-child){
+    margin: 0 0 18% 0;
+}
+
+.intro_visual .rectangle01{
+    animation-delay:0.3s;
+}
+
+.intro_visual .rectangle02{
+    animation-delay:0.6s;
+}
+
+.intro_visual .rectangle03{
+    animation-delay:0.9s;
+}
+
+@keyframes hideIntro {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @media(max-width:1240px){
-    .m_intro_visual{
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--color-black-main);
-        z-index: 111;
-
-        animation-name: hideIntro;
-        animation-duration: 0.5s;
-        animation-delay: 2.5s;
-        animation-fill-mode:forwards;
+    .intro_visual .rectangle_box{
+        max-height: 198px;
     }
 
-    .m_intro_visual .rectangle_box{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 20%;
+    .intro_visual .rectangle{
+        height: 32px;
+    }
+}
+
+@media(max-width:768px){
+    .intro_visual .rectangle_box{
+        width: 15%;
+        max-height: 92px;
     }
 
-    .m_intro_visual .rectangle{
-        min-height: 22px;
-        background-color: var(--color-black-main);
-
-        animation-name: colorChange;
-        animation-duration: 1.2s;
-        animation-fill-mode:forwards;
+    .intro_visual .rectangle{
+        height: 18px;
     }
 
-    .m_intro_visual .rectangle:not(:last-child){
-        margin: 0 0 20px 0;
-    }
-
-    .m_intro_visual .rectangle01{
-        animation-delay:0.3s;
-    }
-    
-    .m_intro_visual .rectangle02{
-        animation-delay:0.6s;
-    }
-    
-    .m_intro_visual .rectangle03{
-        animation-delay:0.9s;
-    }
-
-    @keyframes hideIntro {
-        0%{
-            opacity: 1;
-            visibility: visible;
-        }
-        100%{
-            opacity: 0;
-            visibility: hidden;
-        }
+    .intro_visual .rectangle:not(:last-child){
+        margin: 0 0 20% 0;
     }
 }
 
@@ -102,6 +122,7 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .main_visual .txt_container .be_box{
@@ -128,8 +149,7 @@
 }
 
 .main_visual .txt_container .img_box {
-    width: 100%;
-    margin: 0 15px;
+    max-width: 235px;
     opacity: 0;
     visibility: hidden;
 
@@ -142,38 +162,6 @@
 .main_visual .txt_container .img_box img{
     width: 100%;
 }
-
-.main_visual .txt_container .rectangle_box{
-    width: 100%;
-}
-
-.main_visual .txt_container .rectangle_box > div{
-    min-height: 64px;
-    height: 100%;
-    flex: 1;
-    background-color: var(--color-black-main);
-
-    animation-name: colorChange;
-    animation-duration: 1.2s;
-    animation-fill-mode:forwards;
-}
-
-.main_visual .txt_container .rectangle_box > div:not(.rectangle03){
-    margin-bottom: 44px;
-}
-
-.main_visual .txt_container .rectangle_box > .rectangle01{
-    animation-delay:0.3s;
-}
-
-.main_visual .txt_container .rectangle_box > .rectangle02{
-    animation-delay:0.6s;
-}
-
-.main_visual .txt_container .rectangle_box > .rectangle03{
-    animation-delay:0.9s;
-}
-
 
 .main_visual .scroll_container {
     margin: 0 0 72px 0;
@@ -352,8 +340,8 @@
         gap: 30px;
     }
 
-    .main_visual .txt_container .box .img_box{
-        flex: 0.2;
+    .main_visual .txt_container .box {
+        gap: 10px;
     }
 
     .main_visual .txt_container .be_box{
@@ -373,21 +361,9 @@
         width: 100%;
     }
 
-    .main_visual .txt_container .img_box,
-    .main_visual .txt_container .rectangle_box{
-        margin: 0 5px 0 0;
-    }
-
-    .main_visual .txt_container .rectangle_box{
-        flex: 0.2;
-    }
-
-    .main_visual .txt_container .rectangle_box > div{
-        min-height: 40px;
-    }
-
-    .main_visual .txt_container .rectangle_box > div:not(.rectangle03){
-        margin-bottom: 20px;
+    .main_visual .txt_container .img_box{
+        min-width: 49px;
+        margin: 0;
     }
 
     .main_visual .scroll_container{
@@ -403,31 +379,6 @@
 
     .main_visual .txt_container .be_box .blank_box{
         display: block;
-    }
-
-    .main_visual .txt_container .box > div{
-        min-width: 56px;
-    }
-
-    .main_visual .txt_container .img_box,
-    .main_visual .txt_container .rectangle_box{
-        margin: 0 5px 0 0;
-    }
-
-    .main_visual .txt_container .rectangle_box01{
-        margin-right: 19px; 
-        margin-left: 6px;
-    }
-    .main_visual .txt_container .rectangle_box02{
-        margin-left: 5px;
-    }
-
-    .main_visual .txt_container .rectangle_box > div{
-        min-height: 17px;
-    }
-
-    .main_visual .txt_container .rectangle_box > div:not(.rectangle03){
-        margin-bottom: 17px;
     }
 
     .main_visual .scroll_container{
